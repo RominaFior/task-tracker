@@ -1,0 +1,15 @@
+<header class="mb-3">
+  <div class="row">
+    <div class="col">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="col text-end">
+      <app-button
+        *ngIf="hasRoute('/')"
+        color="{{ showAddTask ? 'red' : 'green' }}"
+        btnText="{{ showAddTask ? 'Close' : 'Add' }}"
+        (onClick)="toggleAddTask()"
+      ></app-button>
+    </div>
+  </div>
+</header>

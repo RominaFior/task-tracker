@@ -1,0 +1,11 @@
+.deleteBtn {
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background-color: lightgray;
+}
+
+.reminder {
+  border-left: 5px solid green;
+}

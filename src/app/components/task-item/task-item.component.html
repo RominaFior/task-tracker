@@ -1,0 +1,20 @@
+<div class="col" [ngClass]="{ reminder: task.reminder }" (dblclick)="onToggleTask(task)">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <div class="card-title">{{ task.text }}</div>
+        </div>
+        <div class="col text-end">
+          <i
+            class="bi bi-x-circle deleteBtn"
+            (click)="onClick(task)"
+            [ngStyle]="{ color: 'red' }"
+          ></i>
+        </div>
+      </div>
+
+      <div class="card-text">{{ task.day }}</div>
+    </div>
+  </div>
+</div>
